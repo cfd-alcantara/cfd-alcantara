@@ -53,6 +53,32 @@ Optional Parameters: -n (any number), author = (author name)
 - ***git pull*** - fetch and merge any commits from the tracking remote branch. Fetch the specified remote’s copy of the current branch and immediately merge it into the local copy. The example below is the same as git fetch ＜remote＞followed by git merge origin/＜current-branch＞.   
 **Example:** *git pull &lt;remote&gt;*
 
+- ***git stash*** - Save your work temporarily, so you can switch to something else.  
+  **Parameters:**  
+  - *save:* Save the stash with a message.  
+  - **Example:**  
+    ```bash
+    git stash save "Trying out a new idea"
+    ```
+- ***git branch*** - Check, create, or delete branches in your project.  
+   **Parameters:**
+     - `-a`: List all branches.
+     - `-d`: Delete a branch.
+     - `<branch-name>`: Create a new branch.
+   - **Examples:**
+     ```bash
+     # List all branches
+     git branch
+
+     # Create a new branch
+     git branch <branch-name>
+
+     # Delete a branch
+     git branch -d feature-branch
+     ```
+
+
+
 <h2></h2>
 
 <h6 align="center"> GIF taken from here:<br>https://giphy.com/gifs/dommespace-domme-space-programador-qgQUggAC3Pfv687qPC</h6>
